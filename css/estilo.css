@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("../imagenes/fondo.webp");
+    background-position:center;
+    height: 100px;
+    width:100%;
+    grid-area: header;
+    text-shadow: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.fraseEncabezado {
+    color:white;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+h2 {
+    color:peru;
+    font-weight: bold;
+}
+
+nav {
+    background-color:chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+    grid-area: nav;
+}
+
+main {
+    color: black;
+}
+
+p {
+    color: peru;
+}
+
+li {
+    list-style-type: none;
+}
+
+.cajaForm {
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+
+}
+
+footer {
+    font-weight: bold;
+    color:chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cajaFooter {
+    border: 2px solid black;
+    position: fixed;
+    bottom: 0px;
+    /* position: absolute;
+    bottom:-250px; */
+}
+
+img {
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+}
+
+section {
+    margin: 1rem;
+    padding: 0.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+form {
+    cursor: pointer;
+}
+
+.mainFaqs {
+    cursor: pointer;
+}
+
+.sectionTienda {
+    grid-area: sectionTienda;
+}
+
+.sectionRecetas {
+    grid-area: sectionRecetas;
+}
+
+.sectionFormulario {
+    grid-area: sectionFormulario;
+}
+
+.sectionPreguntas {
+    grid-area: sectionPreguntas;
+}
+
+.gridInicio {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "sectionTienda sectionRecetas"
+    "sectionFormulario sectionPreguntas"
+    "footer footer"
+    ;
+}
+
+.listaTienda {
+    grid-area: listaTienda;
+}
+
+.cajaUno {
+    grid-area: cajaUno;
+}
+
+.cajaDos {
+    grid-area: cajaDos;
+}
+
+.cajaTres {
+    grid-area: cajaTres;
+}
+
+.cajaCuadtro {
+    grid-area: cajaCuatro;
+}
+
+.cajaSeis {
+    grid-area: cajaSeis;
+}
+
+.cajaSiete {
+    grid-area: cajaSiete;
+}
+
+.cajaOcho {
+    grid-area: cajaOcho;
+}
+
+.cajaNueve {
+    grid-area: cajaNueve;
+}
+
+.cajaDiez {
+    grid-area: cajaDiez;
+}
+
+.cajaOnce {
+    grid-area: cajaOnce;
+}
+
+.gridTienda {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "cajaUno cajaDos"
+    "cajaTres cajaCuatro"
+    "footer footer"
+    ;
+}
+
+.gridRecetas {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "cajaSeis cajaSiete cajaOcho" 
+    "cajaNueve cajaDiez cajaOnce"
+    "footer footer footer"
+    ;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enviosUno {
+    grid-area: enviosUno;
+    border: 2px dotted black;
+    height: 100%;
+    width: 100%;
+}
+
+.enviosDos {
+    grid-area: enviosDos;
+    border: 2px dotted black;
+    height: 100%;
+    width: 100%;
+}
+
+.medios {
+    grid-area: medios;
+    border: 2px dotted black;
+    height: 100%;
+    width: 100%;
+}
+
+.devoluciones {
+    grid-area: devoluciones;
+    border: 2px dotted black;
+    height: 100%;
+    width: 100%;
+}
+
+.monto {
+    grid-area: monto;
+    border: 2px dotted black;
+    height: 100%;
+    width: 100%;
+}
+
+.donde {
+    grid-area: donde;
+    border: 2px dotted black;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* VISTA TABLET */
+
+@media (min-width: 350px) and (max-width:900px) {
+
+    .gridRecetas {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "cajaSeis cajaSiete" 
+        "cajaOcho cajaNueve" 
+        "cajaDiez cajaOnce"
+        "footer footer"
+        ;
+    }
+
+}
+
+/* VISTA MOVIL */
+
+@media (min-width: 350px) and (max-width:650px) {
+    .gridInicio {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "sectionTienda"
+        "sectionRecetas"
+        "sectionFormulario" 
+        "sectionPreguntas"
+        "footer"
+        ;
+    }
+
+    .gridTienda {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "cajaUno" 
+        "cajaDos"
+        "cajaTres" 
+        "cajaCuatro"
+        "footer"
+        ;
+    }
+
+    .gridRecetas {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "cajaSeis" 
+        "cajaSiete" 
+        "cajaOcho" 
+        "cajaNueve" 
+        "cajaDiez" 
+        "cajaOnce"
+        "footer"
+        ;
+    }
+
+}
+
+/* TRANSICIONES */
+
+img:hover {
+    transition: 2s;
+    height: 275px;
+    width: 275px;
+}
+
+.mainFaqs:hover {
+    transition: 2s;
+    font-size: 150%;
+}
