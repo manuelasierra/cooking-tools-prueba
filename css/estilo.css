@@ -58,10 +58,11 @@ nav {
     background-color:chocolate;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     position: sticky;
     top: 100px;
     grid-area: nav;
+    
 }
 
 main {
@@ -96,9 +97,11 @@ footer {
 .cajaFooter {
     border: 2px solid black;
     position: fixed;
-    bottom: 0px;
+    bottom:0px;
+    margin-right: 40%;
+    margin-left: 40%;
     /* position: absolute;
-    bottom:-250px; */
+    bottom:-500px; */
 }
 
 img {
@@ -278,7 +281,7 @@ main {
 
 /* VISTA TABLET */
 
-@media (min-width: 350px) and (max-width:900px) {
+@media (min-width: 650px) and (max-width:900px) {
 
     .gridRecetas {
         display: grid;
@@ -296,7 +299,7 @@ main {
 
 /* VISTA MOVIL */
 
-@media (min-width: 350px) and (max-width:650px) {
+@media (min-width: 350px) and (max-width:651px) {
     .gridInicio {
         display: grid;
         grid-template-areas:
@@ -306,6 +309,7 @@ main {
         "sectionRecetas"
         "sectionFormulario" 
         "sectionPreguntas"
+        "carousel"
         "footer"
         ;
     }
@@ -338,9 +342,14 @@ main {
         ;
     }
 
+    .encabezado {
+    width: auto;
+    }
+
+    .
 }
 
-/* TRANSICIONES */
+/* TRANSICIÓN */
 
 img:hover {
     transition: 2s;
@@ -348,7 +357,28 @@ img:hover {
     width: 275px;
 }
 
-.mainFaqs:hover {
-    transition: 2s;
-    font-size: 150%;
+/* ANIMACIÓN */
+
+@keyframes texto {
+    0% {
+        opacity: 20%; 
+    }
+
+    100% { 
+        opacity: 200%;
+    }
 }
+
+.mainFaqs {
+    animation-name: texto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    margin-right: 50%;
+    margin-left: 50%;
+    }
+
